@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}  
+body{
+    background-image: url(./img/stock-photo-dark-sky-yellow-illumination-carpathian.jpg);
+    background-size: cover;
+}
+.conteiner {
+    width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card:nth-child(2){
+    background: linear-gradient(to right bottom, #ff0000,#a84f4f,#fc8c8c);
+}
+.card {
+    width: 400px;
+    height: 450px;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    background: linear-gradient(to right bottom, #d2a03c,#a89041,#ddd8c1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button {
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #ff0000;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: button 1s infinite linear alternate;
+}
+@keyframes button{
+    0%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+}
+.button:hover{
+    background-color: #fc8c8c;
+}
+.button__conteiner {
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+}
+.input__1{
+    display: none;
+}
+.input__1[type="checkbox"]:checked ~ .lable__1 .button{
+}
+.lable__1 {
+}
+.text__conteiner {
+    width: 500px ;
+    height: 500px;
+    border: 1px solid #ffffff;
+    margin: 50px auto;
+    display: none;
+}
+.input__1[type="checkbox"]:checked ~ .text__conteiner{
+    display: block;
+}
